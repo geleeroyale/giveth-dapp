@@ -1,15 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import registerServiceWorker from './lib/registerServiceWorker'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import './styles/application.css'
+import registerServiceWorker from './lib/registerServiceWorker';
+import Application from './containers/Application';
+import './styles/application.css';
 
-// containers
-import Application from './containers/Application'
-
+/* global document */
 ReactDOM.render(
-  <Application/>
-  ,document.getElementById('root')
-)
+  <Application />, // eslint-disable-line react/jsx-filename-extension
+  document.getElementById('root'),
+);
 
-registerServiceWorker()
+registerServiceWorker();
